@@ -1,0 +1,1 @@
+# quanttide-specification-of-course-development
