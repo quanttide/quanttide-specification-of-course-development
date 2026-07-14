@@ -74,6 +74,21 @@
 | `label` | string | 是 | — | 按钮文案 |
 | `targetSceneId` | string | 是 | — | 目标场景 ID |
 
+## ContentStatus
+
+ContentStatus 控制课程内容的研发状态。上四级实体（Program / Course / Phase / Lesson）均通过该状态标记可用性。
+
+| 值 | 含义 |
+|----|------|
+| `DRAFT` | 草稿，研发中，教学侧不可见 |
+| `PUBLISHED` | 已发布，可供教学引用 |
+
+### 规则
+
+- 仅 `PUBLISHED` 的内容可被 Class 引用
+- 删除 `PUBLISHED` 内容必须先下架（降为 `DRAFT`）
+- 发布上级容器时，需检查子级状态，有 `DRAFT` 子级则提示确认
+
 ## JSON 示例
 
 ```json
