@@ -1,10 +1,13 @@
-# 领域架构
+# 课程研发规格
 
-量潮课程云的产品规格、数据规范和接口契约。
+课程云产品的领域架构、数据模型和状态规范。
 
 ## 文档
 
 | 文档 | 内容 |
 |------|------|
 | [domain.md](./domain.md) | 子领域划分、实体定义、设计规则 |
-| [data-model.md](./data-model.md) | 课程树六级模型、ClassTeaching 字段 |
+| [schema/index.md](./schema/index.md) | 数据模型总览 |
+| [schema/course-tree.md](./schema/course-tree.md) | 课程树六级模型（Program → Step） |
+| [schema/class.md](./schema/class.md) | ClassTeaching 模型 |
+| [schema/status.md](./schema/status.md) | ContentStatus / ClassStatus 枚举 |
